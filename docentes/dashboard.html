@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Panel de Docentes</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/docentes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Docente: Carlos Rodríguez</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html" class="active">Inicio</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">Materias</a>
+                            <ul class="submenu">
+                                <li><a href="materias.html?id=1">Matemáticas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Panel de Docente</h1>
+                
+                <div class="welcome-box">
+                    <h2>Bienvenido, Carlos Rodríguez</h2>
+                    <p>Desde este panel podrás gestionar tus materias y las calificaciones de tus estudiantes.</p>
+                </div>
+                
+                <h2>Mis Materias</h2>
+                
+                <div class="materias-cards">
+                    <div class="materia-card">
+                        <h3>Matemáticas</h3>
+                        <div class="materia-info">
+                            <p><strong>Grupos:</strong> 2</p>
+                            <p><strong>Estudiantes:</strong> 25</p>
+                        </div>
+                        <a href="materias.html?id=1" class="btn">Gestionar</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/docentes.js"></script>
+</body>
+</html>

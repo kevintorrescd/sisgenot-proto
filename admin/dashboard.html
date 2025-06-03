@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Administración</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Administrador</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html" class="active">Inicio</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle">Administración</a>
+                            <ul class="submenu">
+                                <li><a href="usuarios.html">Usuarios</a></li>
+                                <li><a href="materias.html">Materias</a></li>
+                                <li><a href="resumen.html">Resumen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Panel de Administración</h1>
+                
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h2>Usuarios</h2>
+                        <p>Gestión de perfiles de estudiantes y docentes</p>
+                        <a href="usuarios.html" class="btn">Administrar</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h2>Materias</h2>
+                        <p>Gestión de materias del sistema</p>
+                        <a href="materias.html" class="btn">Administrar</a>
+                    </div>
+                    
+                    <div class="card">
+                        <h2>Resumen</h2>
+                        <p>Estadísticas generales del sistema</p>
+                        <a href="resumen.html" class="btn">Ver</a>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

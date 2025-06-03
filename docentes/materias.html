@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Gestión de Materias</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/docentes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Docente: Carlos Rodríguez</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html">Inicio</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle active">Materias</a>
+                            <ul class="submenu show">
+                                <li><a href="materias.html?id=1" class="active">Matemáticas</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Matemáticas</h1>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="grupo1">Grupo 1</button>
+                    <button class="tab-btn" data-tab="grupo2">Grupo 2</button>
+                </div>
+                
+                <div class="tab-content" id="grupo1">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Asistencia</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Nota 3</th>
+                                <th>Nota Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Juan</td>
+                                <td>Pérez</td>
+                                <td>
+                                    <select class="asistencia-select">
+                                        <option value="presente">Presente</option>
+                                        <option value="ausente">Ausente</option>
+                                        <option value="excusa">Excusa</option>
+                                    </select>
+                                </td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="3.5" class="nota-input"></td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="4.0" class="nota-input"></td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="3.8" class="nota-input"></td>
+                                <td class="nota-final">3.8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="actions">
+                        <button class="btn" id="save-notas">Guardar Cambios</button>
+                    </div>
+                </div>
+                
+                <div class="tab-content hidden" id="grupo2">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Apellido</th>
+                                <th>Asistencia</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Nota 3</th>
+                                <th>Nota Final</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2</td>
+                                <td>María</td>
+                                <td>González</td>
+                                <td>
+                                    <select class="asistencia-select">
+                                        <option value="presente">Presente</option>
+                                        <option value="ausente">Ausente</option>
+                                        <option value="excusa">Excusa</option>
+                                    </select>
+                                </td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="4.0" class="nota-input"></td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="3.5" class="nota-input"></td>
+                                <td><input type="number" min="0" max="5" step="0.1" value="4.2" class="nota-input"></td>
+                                <td class="nota-final">3.9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="actions">
+                        <button class="btn" id="save-notas">Guardar Cambios</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/docentes.js"></script>
+</body>
+</html>

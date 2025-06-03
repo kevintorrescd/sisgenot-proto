@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Resumen</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Administrador</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html">Inicio</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle active">Administración</a>
+                            <ul class="submenu show">
+                                <li><a href="usuarios.html">Usuarios</a></li>
+                                <li><a href="materias.html">Materias</a></li>
+                                <li><a href="resumen.html" class="active">Resumen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Resumen del Sistema</h1>
+                
+                <div class="stats-cards">
+                    <div class="stat-card">
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-info">
+                            <h2>Docentes</h2>
+                            <p class="stat-number">2</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">👨‍🎓</div>
+                        <div class="stat-info">
+                            <h2>Estudiantes</h2>
+                            <p class="stat-number">25</p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-info">
+                            <h2>Materias</h2>
+                            <p class="stat-number">5</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="charts-container">
+                    <div class="chart-box">
+                        <h2>Distribución de Estudiantes por Grupo</h2>
+                        <div class="chart">
+                            <!-- Aquí iría un gráfico, pero por ahora usaremos una tabla simple -->
+                            <table class="simple-table">
+                                <tr>
+                                    <th>Grupo</th>
+                                    <th>Cantidad</th>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 1</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Grupo 2</td>
+                                    <td>13</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-box">
+                        <h2>Rendimiento Académico</h2>
+                        <div class="chart">
+                            <!-- Aquí iría un gráfico, pero por ahora usaremos una tabla simple -->
+                            <table class="simple-table">
+                                <tr>
+                                    <th>Materia</th>
+                                    <th>Promedio</th>
+                                </tr>
+                                <tr>
+                                    <td>Matemáticas</td>
+                                    <td>3.8</td>
+                                </tr>
+                                <tr>
+                                    <td>Programación</td>
+                                    <td>4.2</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>

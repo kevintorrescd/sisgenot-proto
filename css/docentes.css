@@ -1,0 +1,73 @@
+/* Estilos específicos para el panel de docentes */
+
+.welcome-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.welcome-box h2 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.welcome-box p {
+    color: #7f8c8d;
+}
+
+.materias-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.materia-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.materia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.materia-card h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.materia-info {
+    margin-bottom: 1.5rem;
+}
+
+.materia-info p {
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+/* Estilos para la gestión de notas */
+.nota-input {
+    width: 60px;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.asistencia-select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+}
+
+.nota-final {
+    font-weight: bold;
+    color: #3498db;
+}

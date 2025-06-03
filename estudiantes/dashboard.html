@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Panel de Estudiantes</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/estudiantes.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Estudiante: Juan Pérez</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html" class="active">Resumen</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Resumen Académico</h1>
+                
+                <div class="welcome-box">
+                    <h2>Bienvenido, Juan Pérez</h2>
+                    <p>Aquí puedes ver tu rendimiento académico y calificaciones.</p>
+                </div>
+                
+                <div class="student-info">
+                    <div class="info-card">
+                        <h3>Información Personal</h3>
+                        <p><strong>ID:</strong> 1</p>
+                        <p><strong>Nombre:</strong> Juan Pérez</p>
+                        <p><strong>Correo:</strong> juan.perez@ejemplo.com</p>
+                        <p><strong>Grupo:</strong> 1</p>
+                    </div>
+                </div>
+                
+                <h2>Mis Calificaciones</h2>
+                
+                <div class="materias-cards">
+                    <div class="materia-card">
+                        <h3>Matemáticas</h3>
+                        <div class="docente-info">
+                            <p><strong>Docente:</strong> Carlos Rodríguez</p>
+                        </div>
+                        <table class="notas-table">
+                            <tr>
+                                <th>Asistencia</th>
+                                <th>Nota 1</th>
+                                <th>Nota 2</th>
+                                <th>Nota 3</th>
+                                <th>Nota Final</th>
+                            </tr>
+                            <tr>
+                                <td>Presente</td>
+                                <td>3.5</td>
+                                <td>4.0</td>
+                                <td>3.8</td>
+                                <td class="nota-final">3.8</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="promedio-general">
+                    <h3>Promedio General: <span>3.8</span></h3>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/estudiantes.js"></script>
+</body>
+</html>

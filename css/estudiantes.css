@@ -1,0 +1,106 @@
+/* Estilos específicos para el panel de estudiantes */
+
+.welcome-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.welcome-box h2 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.welcome-box p {
+    color: #7f8c8d;
+}
+
+.student-info {
+    margin-bottom: 2rem;
+}
+
+.info-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.info-card h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.info-card p {
+    margin-bottom: 0.5rem;
+    color: #7f8c8d;
+}
+
+.materias-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.materia-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+.materia-card h3 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.docente-info {
+    margin-bottom: 1rem;
+    color: #7f8c8d;
+}
+
+.notas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.notas-table th,
+.notas-table td {
+    padding: 0.75rem;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.notas-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.nota-final {
+    font-weight: bold;
+    color: #3498db;
+}
+
+.promedio-general {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.promedio-general h3 {
+    color: #2c3e50;
+}
+
+.promedio-general span {
+    font-size: 1.5rem;
+    color: #3498db;
+    font-weight: bold;
+}

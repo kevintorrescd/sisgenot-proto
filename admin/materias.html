@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISGENOT - Gestión de Materias</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">SISGENOT</div>
+            <div class="user-info">
+                <span>Administrador</span>
+                <a href="../index.html" class="logout">Cerrar Sesión</a>
+            </div>
+        </header>
+        
+        <div class="content">
+            <aside class="sidebar">
+                <nav>
+                    <ul>
+                        <li><a href="dashboard.html">Inicio</a></li>
+                        <li>
+                            <a href="#" class="dropdown-toggle active">Administración</a>
+                            <ul class="submenu show">
+                                <li><a href="usuarios.html">Usuarios</a></li>
+                                <li><a href="materias.html" class="active">Materias</a></li>
+                                <li><a href="resumen.html">Resumen</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main>
+                <h1>Gestión de Materias</h1>
+                
+                <div class="actions">
+                    <button class="btn" id="add-materia">Agregar Materia</button>
+                </div>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Docente Asignado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Matemáticas</td>
+                            <td>Curso básico de matemáticas</td>
+                            <td>Carlos Rodríguez</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Programación</td>
+                            <td>Introducción a la programación</td>
+                            <td>Laura Martínez</td>
+                            <td>
+                                <button class="btn-edit">Editar</button>
+                                <button class="btn-delete">Eliminar</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <!-- Modal para agregar/editar materia -->
+                <div class="modal" id="materia-modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2 id="modal-title">Agregar Materia</h2>
+                        <form id="materia-form">
+                            <div class="input-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="descripcion">Descripción</label>
+                                <textarea id="descripcion" name="descripcion" rows="3"></textarea>
+                            </div>
+                            <div class="input-group">
+                                <label for="docente">Docente Asignado</label>
+                                <select id="docente" name="docente" required>
+                                    <option value="">Seleccione un docente</option>
+                                    <option value="1">Carlos Rodríguez</option>
+                                    <option value="2">Laura Martínez</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn">Guardar</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="../js/main.js"></script>
+    <script src="../js/admin.js"></script>
+</body>
+</html>
