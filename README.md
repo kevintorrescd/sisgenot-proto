@@ -1,6 +1,6 @@
 # SISGENOT - prototipo
 
-Sistema de Gestión de Notas CESDE (SISGENOT) es una aplicación web para la administración y gestión de calificaciones.
+Sistema de Gestión de Notas CESDE (SISGENOT) es una aplicación web para la administración y gestión de notas.
 
 ## Tecnologías Utilizadas
 
