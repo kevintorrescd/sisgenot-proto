@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener el formulario de login
     const loginForm = document.getElementById('login-form');
-    
+   
+   //renovacion de login
+    /* 
     // Si estamos en la página de login
     if (loginForm) {
         loginForm.addEventListener('submit', function(e) {
@@ -32,8 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 alert('Por favor complete todos los campos');
             }
         });
-    }
-    
+    } 
+    */
+    //se hara nuevamente el login
+
+
     // Funcionalidad para los menús desplegables en la barra lateral
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
     
